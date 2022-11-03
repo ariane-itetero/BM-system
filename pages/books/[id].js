@@ -1,4 +1,4 @@
 function BooksDetails(){
-    return <h1>Home</h1>
+    return <h1>Book Details</h1>
 }
-export default Home;
+export default BooksDetails;
