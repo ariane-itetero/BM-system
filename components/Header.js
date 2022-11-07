@@ -15,7 +15,7 @@ const Header = () => {
     }
   }
   return (
-   <AppBar>
+   <AppBar position='sticky'>
     <Toolbar>
       <MenuBookIcon sx={{fontSize:"26px"}}/>
 <Box display="flex" margin={"auto"}>
