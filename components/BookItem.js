@@ -7,10 +7,17 @@ import { Button, CardActionArea, CardActions } from '@mui/material';
 
 const BookItem = ({title,id,author,imageUrl}) => {
   return (
-    <Card sx={{ width:"100%",height:"100%"  }}>
-
-  <img src={imageUrl} alt={title}/>
-      <CardContent>
+    <Card sx={{ 
+      width:"100%",
+      height:"100%",
+      borderRadius:3,
+      boxShadow:"5px 5px 10px #ccc",
+       
+       }}>
+<div style={{width:'100%',height:'50%'}}>
+    <img src={imageUrl} alt={title} width={'100%'} height={'100%'}/>
+</div>
+      <CardContent sx={{width:"100%",height:"30%"}}>
         <Typography gutterBottom variant="h5" component="div">
           {title}
         </Typography>
@@ -21,7 +28,10 @@ const BookItem = ({title,id,author,imageUrl}) => {
  
     <CardActions>
       <Button size="small" color="primary">
-        Share
+        Edit
+      </Button>
+      <Button size="small" color="primary">
+        Delete
       </Button>
     </CardActions>
   </Card>

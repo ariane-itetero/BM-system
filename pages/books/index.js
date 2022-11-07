@@ -1,4 +1,9 @@
+import BookList from "../../components/BookList";
+
 function BooksHome(){
-    return <h1>Books Page</h1>
+    return (
+    
+    <BookList/> 
+    ) 
 }
 export default BooksHome;
